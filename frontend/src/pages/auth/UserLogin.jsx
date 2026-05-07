@@ -12,7 +12,7 @@ export default function UserLogin() {
     const password = e.target.password.value;
 
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/user/login",
+      const res = await axios.post("https://food-reel-backend-ifnf.onrender.com/api/auth/user/login",
         {
           email,
           password
