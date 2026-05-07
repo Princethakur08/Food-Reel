@@ -10,8 +10,8 @@ const foodController = require("../controllers/food.controller")
 const router = express.Router();
 
 
-console.log("authUserMiddleware:", authMiddleware.authUserMiddleware);
-console.log("getFoodPartnerById:", foodPartnerController.getFoodPartnerById);
+// console.log("authUserMiddleware:", authMiddleware.authUserMiddleware);
+// console.log("getFoodPartnerById:", foodPartnerController.getFoodPartnerById);
 
 // get /api/food/food-partner/:id
 
