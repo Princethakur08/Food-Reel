@@ -13,7 +13,7 @@ const Profile = () => {
 
 
  useEffect(() =>{
- axios.get(`http://localhost:3000/api/food-partner/${id}`,{withCredentials: true })
+ axios.get(`https://food-reel-backend-ifnf.onrender.com/api/food-partner/${id}`,{withCredentials: true })
 
 
 
