@@ -82,7 +82,7 @@ async function handleLike(videoid){
 }
 async function saveVideo(videoId){
 
-  const response = await axios.post("http://localhost:3000/api/food/save", {foodId:videoId},{withCredentials:true})
+  const response = await axios.post("https://food-reel-backend-ifnf.onrender.com/api/food/save", {foodId:videoId},{withCredentials:true})
 
 
 
