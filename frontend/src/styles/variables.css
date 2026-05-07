@@ -1,0 +1,28 @@
+/* Centralized theme variables (light + dark, system-based) */
+:root {
+  --bg: #f7f8fb;
+  --card: #fff;
+  --text: #0f1720;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --primary-contrast: #fff;
+  --input-bg: #f3f4f6;
+  --border: #e6e8eb;
+  --radius: 10px;
+  --shadow: 0 8px 24px rgba(16,24,40,0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #071025;
+    --card: #081426;
+    --text: #e6eef8;
+    --muted: #98a6b4;
+    --primary: #60a5fa;
+    --primary-contrast: #021428;
+    --input-bg: #091425;
+    --border: #123042;
+    --radius: 10px;
+    --shadow: 0 8px 30px rgba(2,6,23,0.6);
+  }
+}

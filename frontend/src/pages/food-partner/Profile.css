@@ -1,0 +1,99 @@
+.container {
+  min-height: 100vh;
+  background: #f8f6f2; /* soft food theme */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+/* 🔹 Top Section */
+.top-section {
+  display: flex;
+  gap: 25px;
+  padding: 15px;
+  align-items: center;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ff7a00; /* food orange */
+}
+
+.info {
+  flex: 1;
+}
+
+.business {
+  background: #2e7d32; /* green */
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.address {
+  background: #e8f5e9;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* 🔹 Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  text-align: center;
+}
+
+.stat-box p {
+  font-size: 15px;
+  color: gray;
+  font-weight: bold;
+}
+
+.stat-box h3 {
+  margin-top: 5px;
+  color: #ff7a00;
+}
+
+/* 🔹 Divider */
+hr {
+  margin: 10px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* 🔹 Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 5px;
+}
+
+/* 🔹 Video Box */
+.video-box {
+  background: #ddd;
+  aspect-ratio: 9/16; /* reels size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 8px;
+}

@@ -1,0 +1,177 @@
+/* Mobile First */
+
+.create-page {
+  min-height: 100vh;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.create-card {
+  width: 100%;
+  max-width: 420px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.create-card h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.upload-box {
+  width: 100%;
+  height: 220px;
+  border: 2px dashed #475569;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 12px;
+  transition: 0.3s;
+  object-fit: fill;
+}
+
+.upload-box:hover {
+  border-color: #6366f1;
+}
+
+.upload-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-content {
+  text-align: center;
+  color: #94a3b8;
+}
+
+.upload-content svg {
+  margin-bottom: 8px;
+}
+
+
+
+.form-group {
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+.form-group input,
+.form-group textarea {
+  
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  
+  
+}
+
+.form-group input[type="file"] {
+  background: #334155;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #6366f1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #4f46e5;
+}
+
+/* Tablet */
+
+@media (min-width: 640px) {
+  .create-card {
+    padding: 24px;
+  }
+
+  .create-card h2 {
+    font-size: 22px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+  .create-card {
+    max-width: 500px;
+  }
+}
+
+
+
+.preview-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-actions {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.change-btn{
+  background: green;
+}
+
+.delete-btn{
+ background: red;
+}
+
+.change-btn,
+.delete-btn {
+  
+  /* background: rgba(0, 0, 0, 0.6); */
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+}
+
+.change-btn:hover,
+.delete-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,158 @@
+/* 🔥 Mobile frame wrapper */
+.mobile-frame {
+  display: flex;
+  justify-content: center;
+  background: #111;
+  min-height: 100vh;
+
+}
+
+/* simulate phone screen */
+.reels-container {
+  width: 100%;
+  max-width: 400px;   /* 📱 mobile width */
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+  border-radius: 20px;   /* optional */
+  box-shadow: 0 0 30px rgba(0,0,0,0.5); /* optional */
+}
+
+
+.reels-scroll {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE */
+}
+
+.reels-scroll::-webkit-scrollbar {
+  display: none;                /* Chrome/Safari */
+}
+
+
+/* Scroll area */
+.reels-scroll {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* Each reel */
+.reel {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+/* Video */
+.reel-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right actions */
+.reel-actions {
+  position: absolute;
+  right: 10px;
+  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.action {
+  width: 48px;
+  height: 48px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: currentColor;
+}
+
+.action:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.reel-actions svg {
+  color: white;
+}
+
+.action span {
+  position: absolute;
+  bottom: -16px;
+  font-size: 11px;
+  color: #ddd;
+}
+
+/* Bottom info */
+.reel-info {
+  position: absolute;
+  bottom: 80px;
+  left: 12px;
+  color: white;
+  width: 70%;
+}
+
+.desc {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.store-btn {
+  background: #3b82f6;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+}
+
+/* Bottom nav */
+.bottom-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 380px;
+  background: rgba(20, 30, 50, 0.6);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index: 20;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.bottom-nav button.active {
+  color: #3b82f6;   /* blue like your screenshot */
+}
+
+
+
+.reel::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
