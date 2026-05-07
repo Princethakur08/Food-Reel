@@ -8,7 +8,7 @@ export default function Saved() {
 
 
   useEffect(() => {
-    const response = axios.get("http://localhost:3000/api/food/saved", { withCredentials: true })
+    const response = axios.get("https://food-reel-backend-ifnf.onrender.com/api/food/saved", { withCredentials: true })
       .then(response => {
         const savedFoods = response.data.savedFoods.map((item) => ({
 
