@@ -12,7 +12,7 @@ const Reels = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/food", {
+      .get("https://food-reel-backend-ifnf.onrender.com/api/food", {
         withCredentials: true,
       })
       .then((res) => {
