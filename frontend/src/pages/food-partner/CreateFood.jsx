@@ -45,7 +45,7 @@ const CreateFood = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/food",
+        "https://food-reel-backend-ifnf.onrender.com/api/food",
         data,
         { withCredentials: true }
       );
