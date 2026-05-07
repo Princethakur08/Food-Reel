@@ -16,7 +16,7 @@ export default function PartnerLogin() {
     const password = e.target.password.value;
 
     try {
-      const res = await axios.post(https://food-reel-backend-ifnf.onrender.com/api/auth/food-partner/login",
+      const res = await axios.post("https://food-reel-backend-ifnf.onrender.com/api/auth/food-partner/login",
         {
           email,
           password
