@@ -56,7 +56,7 @@ const Reels = () => {
 
 async function handleLike(videoid){
   try {
-    const response = await axios.post("http://localhost:3000/api/food/like", { foodId : videoid }, { withCredentials: true });
+    const response = await axios.post("https://food-reel-backend-ifnf.onrender.com/api/food/like", { foodId : videoid }, { withCredentials: true });
     if (response.data.like) {
       console.log("video liked");
       setVideos((prevVideos) =>
