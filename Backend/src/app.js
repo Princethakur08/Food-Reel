@@ -9,7 +9,10 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: "https://food-reel-los7.onrender.com/",
+    origin: [
+  "http://localhost:5173",
+  "https://food-reel-los7.onrender.com"
+],
     credentials: true
 }));
 
